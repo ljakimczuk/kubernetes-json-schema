@@ -182,7 +182,8 @@
           },
           "name": {
             "description": "This must be a DNS_LABEL. Each container in a pod must have a unique name. Cannot be updated.",
-            "type": "string"
+            "type": "string",
+            "format": "hostname"
           },
           "ready": {
             "description": "Specifies whether the container has passed its readiness probe.",
@@ -420,7 +421,8 @@
           },
           "name": {
             "description": "This must be a DNS_LABEL. Each container in a pod must have a unique name. Cannot be updated.",
-            "type": "string"
+            "type": "string",
+            "format": "hostname"
           },
           "ready": {
             "description": "Specifies whether the container has passed its readiness probe.",

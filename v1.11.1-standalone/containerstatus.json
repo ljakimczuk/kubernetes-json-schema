@@ -126,7 +126,8 @@
       "type": [
         "string",
         "null"
-      ]
+      ],
+      "format": "hostname"
     },
     "ready": {
       "description": "Specifies whether the container has passed its readiness probe.",
