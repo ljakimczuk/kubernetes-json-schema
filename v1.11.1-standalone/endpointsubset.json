@@ -192,8 +192,7 @@
             "type": [
               "string",
               "null"
-            ],
-            "format": "hostname"
+            ]
           },
           "port": {
             "description": "The port number of the endpoint.",

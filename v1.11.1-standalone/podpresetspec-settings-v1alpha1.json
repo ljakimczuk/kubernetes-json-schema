@@ -917,8 +917,7 @@
           },
           "name": {
             "description": "Volume's name. Must be a DNS_LABEL and unique within the pod. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names",
-            "type": "string",
-            "format": "hostname"
+            "type": "string"
           },
           "nfs": {
             "description": "Represents an NFS mount that lasts the lifetime of a pod. NFS volumes do not support ownership management or SELinux relabeling.",

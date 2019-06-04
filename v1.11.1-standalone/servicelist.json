@@ -304,8 +304,7 @@
                 "type": [
                   "string",
                   "null"
-                ],
-                "format": "hostname"
+                ]
               },
               "ownerReferences": {
                 "description": "List of objects depended by this object. If ALL objects in the list have been deleted, this object will be garbage collected. If this object is managed by a controller, then an entry in this list will point to this controller, with the controller field set to true. There cannot be more than one managing controller.",
@@ -453,8 +452,7 @@
                       "type": [
                         "string",
                         "null"
-                      ],
-                      "format": "hostname"
+                      ]
                     },
                     "nodePort": {
                       "description": "The port on each node on which this service is exposed when type=NodePort or LoadBalancer. Usually assigned by the system. If specified, it will be allocated to the service if unused or else creation of the service will fail. Default is to auto-allocate a port if the ServiceType of this Service requires one. More info: https://kubernetes.io/docs/concepts/services-networking/service/#type-nodeport",

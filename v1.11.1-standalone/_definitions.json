@@ -5787,8 +5787,7 @@
         },
         "name": {
           "description": "Name of the container specified as a DNS_LABEL. Each container in a pod must have a unique name (DNS_LABEL). Cannot be updated.",
-          "type": "string",
-          "format": "hostname"
+          "type": "string"
         },
         "ports": {
           "description": "List of ports to expose from the container. Exposing a port here gives the system additional information about the network connections a container uses, but is primarily informational. Not specifying a port here DOES NOT prevent that port from being exposed. Any port which is listening on the default \"0.0.0.0\" address inside a container will be accessible from the network. Cannot be updated.",
@@ -6010,8 +6009,7 @@
         },
         "name": {
           "description": "This must be a DNS_LABEL. Each container in a pod must have a unique name. Cannot be updated.",
-          "type": "string",
-          "format": "hostname"
+          "type": "string"
         },
         "ready": {
           "description": "Specifies whether the container has passed its readiness probe.",
@@ -6140,8 +6138,7 @@
       "properties": {
         "name": {
           "description": "The name of this port (corresponds to ServicePort.Name). Must be a DNS_LABEL. Optional only if one port is defined.",
-          "type": "string",
-          "format": "hostname"
+          "type": "string"
         },
         "port": {
           "description": "The port number of the endpoint.",
@@ -9705,8 +9702,7 @@
       "properties": {
         "name": {
           "description": "The name of this port within the service. This must be a DNS_LABEL. All ports within a ServiceSpec must have unique names. This maps to the 'Name' field in EndpointPort objects. Optional if only one ServicePort is defined on this service.",
-          "type": "string",
-          "format": "hostname"
+          "type": "string"
         },
         "nodePort": {
           "description": "The port on each node on which this service is exposed when type=NodePort or LoadBalancer. Usually assigned by the system. If specified, it will be allocated to the service if unused or else creation of the service will fail. Default is to auto-allocate a port if the ServiceType of this Service requires one. More info: https://kubernetes.io/docs/concepts/services-networking/service/#type-nodeport",
@@ -10056,8 +10052,7 @@
         },
         "name": {
           "description": "Volume's name. Must be a DNS_LABEL and unique within the pod. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names",
-          "type": "string",
-          "format": "hostname"
+          "type": "string"
         },
         "nfs": {
           "description": "NFS represents an NFS mount on the host that shares a pod's lifetime More info: https://kubernetes.io/docs/concepts/storage/volumes#nfs",
@@ -15548,8 +15543,7 @@
         },
         "namespace": {
           "description": "Namespace defines the space within each name must be unique. An empty namespace is equivalent to the \"default\" namespace, but \"default\" is the canonical representation. Not all objects are required to be scoped to a namespace - the value of this field for those objects will be empty.\n\nMust be a DNS_LABEL. Cannot be updated. More info: http://kubernetes.io/docs/user-guide/namespaces",
-          "type": "string",
-          "format": "hostname"
+          "type": "string"
         },
         "ownerReferences": {
           "description": "List of objects depended by this object. If ALL objects in the list have been deleted, this object will be garbage collected. If this object is managed by a controller, then an entry in this list will point to this controller, with the controller field set to true. There cannot be more than one managing controller.",
